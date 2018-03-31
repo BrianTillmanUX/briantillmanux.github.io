@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#user {
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#logobackground {
+	margin-top: 3px;
+	padding top: 4px;
+	background-color: #015481
+}

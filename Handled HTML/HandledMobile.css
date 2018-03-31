@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	transition: background-color .5s;
+}
+p{
+font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #666666;
+}
+
+h1{
+font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	color: #666666
+}
+
+#myInput {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/searchicon.svg');
+	background-size: 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #666666;
+}
+
+
+
+/**Id**/
+
+#headerBackground {
+	width: 100%;
+  	height: 60px;
+  	background-color: #005481;
+	position: relative;
+}
+
+#header {
+	padding-top: 20px;
+	color: white;
+	padding-left: 40px;
+  	text-align: center;
+	position: relative;
+}
+
+#profileIcon {
+	float: right;
+	position: relative;
+	z-index: 100;
+	padding-right: 15px;
+	padding-top: 15px;
+	
+}
+
+#searchBar {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#searchBarText {
+	padding-bottom: 20px;
+}
+
+#imageCapture {
+	padding-top: 40px;
+	text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-picture-upload {
+	margin-top: 20px;
+	background-image: url('images/camera.svg');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center;
+    display: inline-block;
+    padding: 80px 80px;
+    cursor: pointer;
+	border: 2px solid #71CDF4;
+    border-radius: 80px;
+	
+}
+
+#communityText {
+	padding: 20px;
+	font-size: 14px;
+}
+
+#commButton {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: white;
+}
+
+#commBackground {
+	width: 100%;
+  	height: 50px;
+  	background-color:#2A75A7;
+	position: relative;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#commBackground:hover {
+	background-color: #71CDF4;
+}
+
+
+/**SideNav**/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+	padding-top: 5px;
+	position: fixed;
+	z-index: 100;
+	font-size:30px;
+	color: white;
+	cursor:pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+

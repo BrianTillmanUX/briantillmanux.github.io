@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Handled Mobile</title>
+<style type="text/css">
+</style>
+<link href="HandledMobile.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<script type="text/javascript" src="ScriptSideNav.js"></script>
+</head>
+
+<body>
+<div id="main">
+  <span onclick="openNav()"><img src="images/hamburger menu.svg" width="50" height="50" alt=""/></span>
+</div>
+<div id="profileIcon">
+	<a href="profile.html"><img id="hamburger" src="images/userIcon.svg" alt="" width="30" hieght="30"/></a> </div>
+<div id="headerBackground">
+<div id="header">
+<h1>Donate</h1>
+	</div>
+	</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Donate</a>
+  <a href="profile.html">Profile</a>
+  <a href="community.html">Community</a>
+  <a href="family.html">Family</a>
+  <a href="aboutUs.html">About Us</a>
+</div>
+<div id="searchBar">
+	<p id="searchBarText">Search by ID-Number or Name</p>
+	<form onsubmit="location.href='donate1.html'; return false;">
+	<input type="text" id="myInput" name="search" placeholder="Search..">
+	</form>
+	</div>
+<div id="imageCapture">
+	<p>Take a Picture of ID-Card:</p> 
+	<label for="capture" class="custom-picture-upload">
+	</label>
+	<input type="file" accept="image/*" id="capture" capture="camera"> 
+	</div>
+	
+<p id="communityText">If you want to donate but aren’t on the street 
+check out the community section to help individuals in your city get back on their feet!</p>
+<a id="commButton" href="family.html"><div id="commBackground">
+Family
+	</div></a>
+</body>
+</html>
