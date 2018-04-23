@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>See Hear Say</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body onmousedown="whichElement(event)">
+<div class="top_nav">
+	<p>See Hear Say</p>
+	<input type="search" id="global_search" placeholder="Search...">
+	<p class="right light">Maria Garcia</p>
+	<img id="trophyroom" width="40px" height="40px" src="images/trophy button.svg" alt=""/>
+	</div>
+	<div class="container">
+		<div class="one">
+		<p class="list_header">Chapter</p>
+		<ul id="list_one">
+			<li>pronouns</li>
+			<li>possessive</li>
+			<li>adjectives</li>
+			<li>determiners</li>
+			<li>quantifiers</li>
+			<li id="C" onclick="makevisible_two()">verbs</li>
+			<li>clauses</li>
+			<li>sentences</li>
+		</ul>
+		</div>
+		<div class="two" id="two">
+		<p class="list_header">Section</p>
+		<ul>
+			<li>irregular verbs</li>
+			<li>question forms</li>
+			<a onclick="makevisible_three()"><li id="C">phrasal verbs</li></a>
+			<li>present tense</li>
+			<li>past tense</li>
+			<li>perfective aspect</li>
+			<li>continuous aspect</li>
+			<li>active and passive</li>
+			<li>to + infinitive</li>
+			<li>-ing forms</li>
+			<li>talking about</li>
+			<li>talking about the past</li>
+		</ul>
+		</div>
+		<div class="three" id ="three">
+		<p class="list_header">Sub-Section</p>
+		<ul>
+			<li>come</li>
+			<a onclick="makevisible_four()"><li id="C">get</li></a>
+			<li>give</li>
+			<li>go</li>
+			<li>put</li>
+			<li>take</li>
+			<li>turn</li>
+			<li>run</li>
+			<li>set</li>
+			<li>carry</li>
+			<li>hold</li>
+			<li>let</li>
+		</ul>
+		</div>
+		<div class="four center" id ="four">
+			<h2>Phrasel Verb: Get</h2>
+			<p>(Along, Off, On, Out, Over, Up)</p>
+			<div class="left dictonary">
+				<h2>Dictionary</h2>
+				<p>Defintions and examples</p>
+			</div>
+			<a class="no_link" href="dictonary html/dictonary.html"><button id="C" class="right button_center dic_but">></button></a>
+			
+			
+			<div class="left practice_button">
+				<h2>Practice One</h2>
+				<p>Match the video with the verb</p>
+			</div>
+			<button id="C" class="right button_center prac_but_1">></button>
+			
+			<div class="pec_text left">Get 80% correct on Practice 1 to unlock Practice 2</div>
+			
+			<div class="left practice_two">
+				<h2>Practice Two</h2>
+				<p>Complete the conversation</p>
+			</div>
+			<button id="C" class="right button_center prac_but_2 button_two">></button>
+			<div class="tro_text left">No Trophy yet...</div>
+		</div>
+	</div>
+		
+</body>
+</html>

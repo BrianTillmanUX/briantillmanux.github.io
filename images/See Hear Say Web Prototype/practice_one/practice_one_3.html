@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>See Hear Say</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,300,400" rel="stylesheet">
+<link href="../css/text_font.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../css/practice_questions.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="../main.js"></script>
+<script type="text/javascript" src="../audio.js"></script>
+<script type="text/javascript" src="../JS/practice_one.js"></script>
+</head>
+
+<body>
+<div class="side_nav">
+  <h3 style="padding-left: 30px;">See | Hear | Say</h3>
+  <ul>
+    <li>Verbs</li>
+    <li>Phrasal Verbs</li>
+    <li>Get</li>
+    <li><span style="font-weight: 400">Dictionary</span></li>
+  </ul>
+  <div id="bottom_trophy_room"> <img width="40px" height="40px" style="padding-left: 20px;" src="../images/trophy button.svg" alt=""/>
+    <p class="light">Maria Garcia</p>
+  </div>
+</div>
+<div class="pone_contianer">
+  <audio id="getalongwith">
+    <source src="../audio/get along with.mp3" type="audio/mpeg" text="audio/mpeg">
+    Your browser does not support the audio element. </audio>
+  <script>
+	var x = document.getElementById("getalongwith"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+	</script>
+  <h1 class="buff"><a onclick="playAudio()">
+    <div class="circle"><i class="fa fa-volume-up speaker center_object"></i></div>
+    </a></h1>
+  <div id="hidden_text">
+	  <p class="big thin">John <span class="bold">gets along with</span> his brother. They do not fight.</p>
+  </div>
+  <div class="img_contain"><img id="getacross_1" onclick="wrong_on_across_1()" class="pointer" src="../images/get across.gif" width="200" height="200" alt=""/> <img id="getover_2" onclick="wrong_on_over_2()" class="pointer" src="../images/getover_2.gif" width="200" height="200" alt=""/><img id="getalong_1" onclick="correct_on_along_1()" class="pointer" src="../images/getalong.gif" width="200" height="200" alt=""/></div>
+  <div class="meter"> <span style="width: 90%"></span> </div>
+</div>
+	
+	
+<!-- Overlays for right or wrong -->
+	
+<div id="overlay_wrong_across_1_1" onclick="wrong_off_across_1()">
+	<div id="text"><span class="col_red">INCORRECT: TRY AGIAN</span><br>
+    <br>
+    <img src="../images/get across.gif" width="200" height="200" alt=""/><br>
+    Get Across<span class="wrong_def"><br>
+    To make someone understand or believe something.<br>
+    <br>
+    <span style="font-weight: 100;">[click anywhere on the screen to return]</span> </span> </div>
+</div>
+	
+<div id="overlay_wrong_across_1_2">
+	<div id="text"><span class="col_red">INCORRECT</span><br>
+    <br>
+    <img src="../images/get across.gif" width="200" height="200" alt=""/><br>
+    Get Across<span class="wrong_def"><br>
+    To make someone understand or believe something.<br>
+    </span>
+		<button onclick="show_answer_along_1()">Correct Answer</button>
+	</div>
+	
+</div>
+	
+<div id="overlay_wrong_over_2_1" onclick="wrong_off_over_2()">
+	<div id="text"><span class="col_red">INCORRECT: TRY AGIAN</span><br>
+    <br>
+    <img src="../images/getover_2.gif" width="200" height="200" alt=""/><br>
+    Get Over<span class="wrong_def"><br>
+    [get something over] To do something or allow something to happen, because you want it to be finished or you want to start something else.<br>
+    <br>
+    <span style="font-weight: 100;">[click anywhere on the screen to go return]</span></span></div>
+</div>
+
+	<div id="overlay_wrong_over_2_2" onclick="wrong_over_2()">
+		
+		<div id="text"><span class="col_red">INCORRECT</span><br>
+    <br>
+    <img src="../images/getover_2.gif" width="200" height="200" alt=""/><br>
+    Get Away<span class="wrong_def"><br>
+    To go somewhere different from where you live in order to have a rest or a vacation.<br>
+    </span>
+		<button onclick="show_answer_along_1()">Correct Answer</button>
+</div>
+		</div>
+	
+<div id="overlay_correct_along_1" onclick="correct_off_along_1()">
+	<div id="text"><span style="color: green">CORRECT</span><br>
+    <br>
+    <img src="../images/getalong.gif" width="200" height="200" alt=""/><br>
+    Get Along (with)<span class="wrong_def"><br>
+    To like someone and to be freindly with that person.<br>
+    <br>
+    <span style="font-weight: 100;"><a href="practice_one_end.html"><button>Next Question</button></a></span></span></div>
+</div>	
+	
+	
+</body>
+</html>
