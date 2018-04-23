@@ -16,6 +16,7 @@ h1 {
 	font-family: "Oswald", sans-serif;
 	font-weight: 600;
   font-size: 2em;
+	letter-spacing: 0.4em;
   /* 2x body copy size = 32px */
   line-height: 1.25;
   /* 45px / 36px */
