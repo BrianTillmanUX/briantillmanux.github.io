@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>See Hear Say</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,300,400" rel="stylesheet">
+<link href="../css/text_font.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../css/practice_questions.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="../main.js"></script>
+<script type="text/javascript" src="../audio.js"></script>
+<script type="text/javascript" src="../JS/practice_one.js"></script>
+</head>
+
+<body>
+<div class="side_nav">
+  <h3 style="padding-left: 30px;">See | Hear | Say</h3>
+  <ul>
+    <li>Verbs</li>
+    <li>Phrasal Verbs</li>
+    <li>Get</li>
+    <li><span style="font-weight: 400">Dictionary</span></li>
+  </ul>
+  <div id="bottom_trophy_room"> <img width="40px" height="40px" style="padding-left: 20px;" src="../images/trophy button.svg" alt=""/>
+    <p class="light">Maria Garcia</p>
+  </div>
+</div>
+<div class="pone_contianer">
+  <audio id="getalongwith">
+    <source src="../audio/getaround.mp3" type="audio/mpeg" text="audio/mpeg">
+    Your browser does not support the audio element. </audio>
+  <script>
+	var x = document.getElementById("getalongwith"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+	</script>
+  <h1 class="buff"><a onclick="playAudio()">
+    <div class="circle"><i class="fa fa-volume-up speaker center_object"></i></div>
+    </a></h1>
+  <div id="hidden_text">
+	  <p class="big thin">There are ways of <span class="bold">getting around</span> the tax rules.</p>
+  </div>
+  <div class="img_contain"><img id="getaround_3" onclick="correct_on_around_3()" class="pointer" src="../images/getaround_3.gif" width="200" height="200" alt=""/> <img id="getdown_2" onclick="wrong_on_down_2()" class="pointer" src="../images/getdown_2.gif" width="200" height="200" alt=""/><img id="getaway_2" onclick="wrong_on_away_2()" class="pointer" src="../images/getaway_2.gif" width="200" height="200" alt=""/></div>
+  <div class="meter"> <span style="width:66%"></span> </div>
+</div>
+	
+	
+<!-- Overlays for right or wrong -->
+	
+<div id="overlay_wrong_down_2_1" onclick="wrong_off_down_2()">
+	<div id="text"><span class="col_red">INCORRECT: TRY AGIAN</span><br>
+    <br>
+    <img class="pointer" src="../images/getdown_2.gif" width="200" height="200" alt=""/><br>
+    Get Down<span class="wrong_def"><br>
+    To lower your head and body quickly in order to avoid being hit by something.<br>
+    <br>
+    <span style="font-weight: 100;">[click anywhere on the screen to return]</span> </span> </div>
+</div>
+	
+<div id="overlay_wrong_down_2_2">
+	<div id="text"><span class="col_red">INCORRECT</span><br>
+    <br>
+    <img class="pointer" src="../images/getdown_2.gif" width="200" height="200" alt=""/><br>
+    Get Down<span class="wrong_def"><br>
+    To lower your head and body quickly in order to avoid being hit by something.<br>
+    </span>
+		<button onclick="show_answer_around_3()">Correct Answer</button>
+	</div>
+	
+</div>
+	
+<div id="overlay_wrong_away_2_1" onclick="wrong_off_away_2()">
+	<div id="text"><span class="col_red">INCORRECT: TRY AGIAN</span><br>
+    <br>
+    <img class="pointer" src="../images/getaway_2.gif" width="200" height="200" alt=""/><br>
+    Get Away<span class="wrong_def"><br>
+    To go somewhere different from where you live in order to have a rest or a vacation.<br>
+    <br>
+    <span style="font-weight: 100;">[click anywhere on the screen to go return]</span></span></div>
+</div>
+
+	<div id="overlay_wrong_away_2_2" onclick="wrong_off_2()">
+		
+		<div id="text"><span class="col_red">INCORRECT</span><br>
+    <br>
+    <img class="pointer" src="../images/getaway_2.gif" width="200" height="200" alt=""/><br>
+    Get Away<span class="wrong_def"><br>
+    To go somewhere different from where you live in order to have a rest or a vacation.<br>
+    </span>
+		<button onclick="show_answer_around_3()">Correct Answer</button>
+</div>
+		</div>
+	
+<div id="overlay_correct_around_3" onclick="correct_off_around_3()">
+	<div id="text"><span style="color: green">CORRECT</span><br>
+    <br>
+    <img class="pointer" src="../images/getaround_3.gif" width="200" height="200" alt=""/><br>
+    Get Around<span class="wrong_def"><br>
+    (get around something) to solve a problem or avoid a difficulty that something is causing.<br>
+    <br>
+    <span style="font-weight: 100;"><a href="practice_one_3.html"><button>Next Question</button></a></span></span></div>
+</div>	
+	
+	
+</body>
+</html>

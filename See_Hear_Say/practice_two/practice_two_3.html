@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>See Hear Say</title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,300,400" rel="stylesheet">
+<link href="../css/text_font.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../css/practice_questions.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="../main.js"></script>
+<script type="text/javascript" src="../audio.js"></script>
+<script type="text/javascript" src="../JS/practice_one.js"></script>
+</head>
+
+<body>
+<div class="side_nav">
+  <h3 style="padding-left: 30px;">See | Hear | Say</h3>
+  <ul>
+    <li>Verbs</li>
+    <li>Phrasal Verbs</li>
+    <li>Get</li>
+    <li><span style="font-weight: 400">Practice 1</span></li>
+  </ul>
+  <div id="bottom_trophy_room"> <img width="40px" height="40px" style="padding-left: 20px;" src="../images/trophy button.svg" alt=""/>
+    <p class="light">Maria Garcia</p>
+  </div>
+</div>
+<div class="pone_contianer">
+<div class="p2_header big">
+	Practice 2: Office Talk
+</div>
+	<div class="p2_main">
+    <img class="p2_back" src="../images/office_back.svg" alt=""/> </div>
+	
+	<div class="p2_question ">
+		<span class="big">Does he make good food?
+</span>
+	</div>
+	
+<div class="p2_answers">
+	<ul>
+		<a onclick="wrong_on_1()"><li>I do not want to be mean, but they are hard to get around</li></a>
+		<a onclick="wrong_on_1()"><li>I do not want to be mean, but they are hard to get at</li></a>
+		<a onclick="correct_on_1()"><li>I do not want to be mean, but they are hard to get down</li></a>
+	</ul>
+	</div>
+	<div class="p2_counter">
+		3/3
+	</div>
+	</div>
+	
+	<div id="overlay_correct_1" onclick="correct_off_3()">
+	<div id="text"><span style="color: green">CORRECT</span><br>
+    <br>
+    <span class="wrong_def" style="font-weight: 100;">[click anywhere on the screen to go to next question]</span></div>
+</div>	
+	
+	<div id="overlay_wrong_1" onclick="wrong_off_1()">
+	<div id="text"><span style="color: red">INCORRECT:<br> TRY AGIAN</span><br>
+    <br>
+    <span class="wrong_def" style="font-weight: 100;">[click anywhere on the screen to restart]</span></div>
+</div>	
+	
+</body>
+</html>
